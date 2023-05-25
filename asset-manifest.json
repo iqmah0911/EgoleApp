@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EgoleApp/static/css/main.2860827a.css",
+    "main.js": "/EgoleApp/static/js/main.470ce305.js",
+    "static/js/787.623860a1.chunk.js": "/EgoleApp/static/js/787.623860a1.chunk.js",
+    "index.html": "/EgoleApp/index.html",
+    "main.2860827a.css.map": "/EgoleApp/static/css/main.2860827a.css.map",
+    "main.470ce305.js.map": "/EgoleApp/static/js/main.470ce305.js.map",
+    "787.623860a1.chunk.js.map": "/EgoleApp/static/js/787.623860a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2860827a.css",
+    "static/js/main.470ce305.js"
+  ]
+}
