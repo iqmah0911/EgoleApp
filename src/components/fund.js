@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import Airtime from "../img/phone_android.png"
+import Airtime from "../img/phone_android.png";
+import "bootstrap/dist/css/bootstrap.min.css";
 function Fund() {
     const [show, setShow] = useState(false);
 
@@ -10,14 +11,14 @@ function Fund() {
 
     return (
         <>
-            <div class="d-flex align-items-center">
+            <div className="d-flex align-items-center">
                 <img onClick={handleShow} className="imgci" src={Airtime} alt="" />
-                <div class="card-info">
-                    <h5 class="mb-0 ci">Airtime</h5>
+                <div className="card-info">
+                    <h5 className="mb-0 ci">Airtime</h5>
                     {/* <small>Sales</small> */}
                 </div>
             </div>
-            <Modal
+            <Modal className="mod"
                 show={show}
                 onHide={handleClose}
                 backdrop="static"

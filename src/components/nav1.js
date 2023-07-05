@@ -19,61 +19,67 @@ function Nav1() {
 
 
     const navBarItems = [
-        {
-          title: "Dashboard",
-          icon: dashboard
-        },
-        {
-          title: "Transaction Details",
-          icon: transactionDetails
-        },
-        {
-          title: "Transaction Summary",
-          icon: transactionSummary
-        },
-        {
-          title: "Wallet Report",
-          icon: walletReport
-        },
-        {
-          title: "Tickets Report",
-          icon: ticketReport
-        },
-        {
-          title: "Reprint",
-          icon: reprint
-        },
-      ]
-
-  return (
-    <div>
-       
-        <div className="header">
-            <img src={Logo} alt="" className='logo' />
-            <div className="hamburger">
-                <span className='sp'>Settings</span>
-                <img src={Be} alt="" className="hamburgerIcon" />
-                <img className='harm' src={HB} alt="menu" />
+        { title: "Dashboard", icon: dashboard },
+        { title: "Transaction Details", icon: transactionDetails },
+        { title: "Transaction Summary", icon: transactionSummary },
+        { title: "Wallet Report", icon: walletReport },
+        { title: "Tickets Report", icon: ticketReport },
+        { title: "Reprint", icon: reprint },
+    ];
+    const navbar = navBarItems.map((item, pos)=> {
+        return(
+            <div className="navBar" key={pos} >
+                <h6>{item.title}</h6>
+                <img src={item.icon} alt="" className="navBarItemImg" />
+                <div className={`${item.title === 'Dashboard' ? 'navBarItem' : 'navBarItem2'}`}>
+                        
+                        {item.title === "Tickets Report" && (
+                            <img src={dropdown} />
+                        )}
+                    </div>
+               
+                
             </div>
-        </div>
-        <hr />
-        <div className="navBar">
-            {navBarItems.map(navBarItem => (
-                <div className={`${navBarItem.title === 'Dashboard' ? 'navBarItem' : 'navBarItem2'} navItem`}>
-                    <img src={navBarItem.icon} alt="" className="navBarItemImg" />
-                    <span className="navBarItemText">
-                        {navBarItem.title}
-                    </span>
-                    {navBarItem.title === "Tickets Report" && (
-                        <img src={dropdown}/>
-                    )}
+            
+        )
+    })
+
+    return (
+        <div>
+
+            <div className="header">
+                <img src={Logo} alt="" className='logo' />
+                <div className="hamburger">
+                    <span className='sp'>Settings</span>
+                    <img src={Be} alt="" className="hamburgerIcon" />
+                    <img className='harm' src={HB} alt="menu" />
                 </div>
-            ))}
+            </div>
+            <hr />
+            <div className="navBar">
+                {navbar}
+                {/* <ul>
+    {navBarItems.map((item, index) => (
+      <li key={index}>{item}</li>
+    ))}
+  </ul> */}
+               
+                    {/* <div className={`${item.title === 'Dashboard' ? 'navBarItem' : 'navBarItem2'} navItem`}>
+                        <img src={item.icon} alt="" className="navBarItemImg" />
+                        <span className="navBarItemText">
+                        
+
+                        </span>
+                        {item.title === "Tickets Report" && (
+                            <img src={dropdown} />
+                        )}
+                    </div>
+                */}
+            </div>
+
         </div>
-        
-    </div>
-    
-  )
+
+    )
 }
 
 export default Nav1

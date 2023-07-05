@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from '../components/nav';
 import Nav1 from "../components/nav1";
 import Footer from '../components/footer';
 import Logo from '../img/logo.png';
@@ -12,6 +11,7 @@ import Bag from "../img/Bag.png";
 import Arhives from "../img/Arhives_alt.png";
 import Money from "../img/Money.png";
 import Mark from "../img/Shape.png";
+import { Button } from 'react-bootstrap';
 
 import Data from "../img/phonelink_ring.png";
 import Cable from "../img/tv (1).png"
@@ -23,7 +23,10 @@ import Tickets from "../img/confirmation_number (1).png";
 import TB from "../img/Vector (10).png";
 import TW from "../img/Vector (11).png"
 import HB from "../img/square.png";
+import Airtime from "../img/phone_android.png"
 import Fund from "../components/fund";
+import MyModal from '../components/modal';
+
 const Home = () => {
   
         
@@ -89,7 +92,12 @@ const Home = () => {
                                 <div className="d-flex justify-content-between mb-3">
                                     <h5 className="card-title mb-0 mt-2"> Transactions</h5>
                                     {/* <img src={Rect} alt="" /> */}
-                                    <UseAirtime/>
+                                    <div className="col-lg-4 col-md-6">
+                                    <MyModal/>
+
+                                    {/* <button type="button" class="btn" style={{marginLeft: "170px"}}>Fund Wallet</button> */}
+                      
+                    </div>
                                     
                                 </div>
                             </div>
@@ -161,16 +169,22 @@ const Home = () => {
                                 </div>
 
                             </div>
-                            <div class="card-body">
-                                <div class="row gy-3">
-                                    <div class="col-md-3 QA">
-                                        <Fund/>
+                            <div className="card-body">
+                                <div className="row gy-3">
+                                    <div className="col-md-3 QA">
+                                    <div className="d-flex align-items-center">
+                                            <img className="imgci" src={Airtime} alt="" />
+                                            <div className="card-info">
+                                                <h5 className="mb-0 ci">Airtime</h5>
+                                            
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="col-md-3 QA">
                                         <div className="d-flex align-items-center">
                                             <img className="imgci" src={Data} alt="" />
                                             <div className="card-info">
-                                                <h5 class="mb-0 ci">Data</h5>
+                                                <h5 className="mb-0 ci">Data</h5>
                                             
                                             </div>
                                         </div>
@@ -347,7 +361,9 @@ const Home = () => {
     <table className="table ">
         
         <thead>
-        <h5 className="th">Today's Transactions</h5>
+        <tr>
+            <th className="th">Quick Reports</th>
+        </tr>
             <tr className="roww">
                 <th>S/N</th>
                 <th>PRODUCT</th>
@@ -394,7 +410,9 @@ const Home = () => {
 <table className="table ">
         
         <thead>
-        <h5 className="th">Quick Reports</h5>
+        <tr>
+            <th className="th">Quick Reports</th>
+        </tr>
             <tr className="roww">
                 <th>S/N</th>
                 <th>PRODUCT</th>
