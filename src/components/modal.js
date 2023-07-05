@@ -28,7 +28,7 @@ function MyModal() {
 
   return (
     <div>
-      <Button style={{border: "none", marginLeft: "170px", marginTop: "9px"}} onClick={handleShowModal1}>
+      <Button className="fnd" style={{border: "none", marginLeft: "170px", marginTop: "9px"}} onClick={handleShowModal1}>
     Fund Wallet
       </Button>
 

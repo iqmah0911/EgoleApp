@@ -301,6 +301,14 @@ display: none;
   top: 70px;
   right: 10px;
 }
+
+.QA {
+  margin-left: 0px;
+  margin: 9px;
+}
+.fnd {
+  margin-left: 0px !important;
+}
 }
 
 
