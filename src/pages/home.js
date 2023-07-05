@@ -31,7 +31,7 @@ const Home = () => {
   
         
     return (
-        <div>
+        <div style={{overflow: 'hidden'}}>
             <div id='mainheader'>
                 <Nav1 />
               
