@@ -258,8 +258,8 @@ display: none;
     
   }
   .egp {
-  width: 400px;
-  margin-left: 25px;
+  width: 360px;
+  margin-left: 15px;
   }
   .bnk {
     width: 100px;
@@ -267,7 +267,7 @@ display: none;
   }
 
   .scd {
-    width: 450px;
+    width: 370px;
     margin-left: 20px;
  
   }
@@ -281,7 +281,7 @@ display: none;
   width: 450px;
 }
 .scd-1{
-  width: 480px;
+  width: 380px;
   margin-left: 20px;
 }
 
@@ -303,8 +303,8 @@ display: none;
 }
 
 .QA {
-  margin-left: 0px;
-  margin: 9px;
+  margin-left: 0px !important;
+  margin: 9px !important;
 }
 .fnd {
   margin-left: 0px !important;
