@@ -249,7 +249,171 @@ display: none;
 }
 /* media query for most mobile devices  */
 
-@media (max-width: 767px) {
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  
+    .content-wrapper{
+      background-color: #FDEEC7;
+      width: 100%;
+      height: 100%;
+   
+      
+    }
+    .egp {
+    width: 360px;
+    margin-left: 15px;
+    }
+    .bnk {
+      width: 100px;
+      margin-top: 20px;
+    }
+  
+    .scd {
+      width: 370px;
+      margin-left: 20px;
+   
+    }
+  .header {
+    margin-left: 0;
+    width: 100vw;
+  }
+  
+  .egp1{
+    margin-left: 20px;
+    width: 450px;
+  }
+  .scd-1{
+    width: 380px;
+    margin-left: 20px;
+  }
+  
+  .tb-1 {
+   width: 100% !important;
+   margin-left: 20px;
+  }
+  .navBar {
+    display: none;
+  }
+  .harm {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffa800;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+  }
+  
+  .QA {
+    margin-left: 0px !important;
+    margin: 9px !important;
+    width: 160px;
+  }
+  .fnd {
+    margin-left: 0px !important;
+  }
+  }
+  
+
+
+/* Media Query for low resolution  Tablets, Ipads */
+/* @media (min-width: 481px) and (max-width: 767px) {
+  body {
+      background-color: yellow;
+  } */
+
+  @media (max-width: 360px) {
+    .content-wrapper{
+      background-color: #FDEEC7;
+      width: 100%;
+      height: 100%;
+   
+      
+    }
+    .egp {
+    width: 325px;
+    margin-left: 15px;
+    font-size: 15px;
+    }
+
+    .text-light {
+      font-size: 18px;
+    }
+    .bnk {
+      width: 100px;
+      margin-top: 20px;
+    }
+  
+    .scd {
+      width: 350px;
+      margin-left: 20px;
+   
+    }
+  .header {
+    margin-left: 0;
+    width: 100vw;
+  }
+  
+  .egp1{
+    margin-left: 20px;
+    width: 450px;
+  }
+  .scd-1{
+    width: 354gpx;
+    margin-left: 20px;
+  }
+  
+  .tb-1 {
+   width: 100% !important;
+   margin-left: 20px;
+  }
+  .navBar {
+    display: none;
+  }
+  .harm {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #ffa800;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+  }
+  
+  .QA {
+    margin-left: 0px !important;
+    margin: 5px !important;
+    width: 155px;
+  }
+  .fnd {
+    margin-left: 0px !important;
+  }
+    
+  }
+
+
+/* Media Query for Tablets Ipads portrait mode */
+/* @media (min-width: 768px) and (max-width: 1024px){
+  body {
+      background-color: blue;
+  }
+} */
+
+/* Media Query for Laptops and Desktops */
+/* @media (min-width: 1025px) and (max-width: 1280px){
+  body {
+      background-color: green;
+  }
+} */
+
+/* Media Query for Large screens */
+/* @media (min-width: 1281px) {
+  body {
+      background-color: white;
+  }
+} */
+
+/* @media (min-width: 320px )  {
   .content-wrapper{
     background-color: #FDEEC7;
     width: 100%;
@@ -305,11 +469,12 @@ display: none;
 .QA {
   margin-left: 0px !important;
   margin: 9px !important;
+  width: 160px;
 }
 .fnd {
   margin-left: 0px !important;
 }
-}
+} */
 
 
 /* modal side */
